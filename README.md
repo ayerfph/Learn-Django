@@ -63,7 +63,7 @@ storefront/
 
 ## Reference
 
-- [Django Tutorial for Beginners - Full Course in 11 Hours [2022]](https://www.youtube.com/watch?v=rHux0gMZ3Eg) by Programming with Mosh
+- [Django Tutorial for Beginners - Full Course in 1 Hours [2022]](https://www.youtube.com/watch?v=rHux0gMZ3Eg) by Programming with Mosh
 
 ## License
 
