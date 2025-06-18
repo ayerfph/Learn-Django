@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f9fa;
+            color: #222;
+        }
+        header {
+            background: #2d6cdf;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #1b3a6b;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1.5rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 1rem 0;
+            display: block;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffeb3b;
+        }
+        main {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+        }
+        main h1, main h2 {
+            color: #2d6cdf;
+        }
+        footer {
+            background: #e9ecef;
+            text-align: center;
+            padding: 1rem 0;
+            color: #555;
+            margin-top: 2rem;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Homepage!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% if name %}
+        <h1>Hello, {{ name }}!</h1>
+        {% else %}
+        <h2>Hello, World</h2>
+        {% endif %}
+        <p>This is the main content of your homepage.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+</body>
+</html>
